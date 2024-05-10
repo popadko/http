@@ -36,7 +36,7 @@ class ClientConnectionManager
     private $idleStreamHandlers = array();
 
     /** @var float */
-    private $maximumTimeToKeepAliveIdleConnection = 5;
+    private $maximumTimeToKeepAliveIdleConnection = 30;
 
     public function __construct(ConnectorInterface $connector, LoopInterface $loop)
     {
